@@ -7,6 +7,33 @@ public_folder: /images
 publish_mode: editorial_workflow
 
 collections:
+  - label: "Global"
+    name: "global"
+    editor:
+      preview: false
+    files:
+      - label: "League Info"
+        name: "info"
+        file: "assets/content/info.json"
+        fields:
+          - {label: name, name: name, widget: string}
+          - {label: address_full, name: address_full, widget: string, hint: "Example: 333 S. Franklin Street Tampa, FL 33602"}
+          - {label: address_street, name: address_street, widget: string, hint: "Example: 333 S. Franklin Street"}
+          - {label: address_city, name: address_city, widget: string, hint: "Tampa"}
+          - {label: Primary Phone Number, name: phone_primary, widget: string, pattern: ['[(]?\d{3}[-.)]?[ ]?\d{3}[-.]?\d{4}\b', "Must be a phone number"], hint: "(780) 434-4226"}
+          - {label: Primary Email Address, name: email_primary, widget: string, pattern: ['([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}', "Must be an email address"]}
+          - {label: Hours of Service, name: hours_of_service, widget: list}
+      - label: "Social Media"
+        name: "social"
+        file: "assets/content/social_media.json"
+        fields:
+          - label: platform
+            name: platform
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Icon, name: icon, widget: string}
+              - {label: Link, name: link, widget: string}
   - name: 'pages'
     label: 'Pages'
     format: 'json'
