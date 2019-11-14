@@ -1,10 +1,8 @@
 <template>
   <main>
-    <section class="">
-      <div class="hero">
-        <div class="container">
-          <h1>We're here to help</h1>
-        </div>
+    <section class="hero flex justify-center items-center">
+      <div class="container">
+        <h1 class="text-white text-3xl font-black">We're a non-profit community organization for</h1>
       </div>
     </section>
 
@@ -57,6 +55,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 602px;
+    min-height: 600px;
   }
 </style>
