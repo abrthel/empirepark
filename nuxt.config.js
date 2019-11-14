@@ -49,6 +49,19 @@ export default {
   */
   axios: {
   },
+
+  generate: {
+    routes: function() {
+      const fs = require('fs');
+      return fs.readdirSync('./assets/content/pages').map(file => {
+        return {
+          route: `/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
+          payload: require(`./assets/content/pages/${file}`),
+        };
+      });
+    },
+  },
+
   /*
   ** Build configuration
   */
