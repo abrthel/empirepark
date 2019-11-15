@@ -1,0 +1,33 @@
+{
+  "hero_section": {
+    "title": "Building a stronger community",
+    "sub_title": "for Empire Park, Edmonton, Alberta"
+  },
+
+  "membership_benefits_section": {
+    "title": "Benefits of Membership",
+    "sub_title": "Reasons to Join Us",
+    "benefits": [
+      {
+        "icon": "fas fa-futbol",
+        "title": "Access & Discounts",
+        "description": "Membership provides access to minor sports such as Soccer and Baseball along with some discounts at City of Edmonton Recreation Facilities"
+      },
+      {
+        "icon": "fas fa-swimmer",
+        "title": "Free Swimming",
+        "description": "Each membership grants users several entries into Edmonton Confederation Pool's public swim times for free. Just one more perk of being a member"
+      },
+      {
+        "icon": "far fa-comments",
+        "title": "Neighourhood Decisions",
+        "description": "Community leagues are recognized by the City of Edmonton as the primary speaking body for a community. We are independent and our members help determine our priorities"
+      },
+      {
+        "icon": "fas fa-piggy-bank",
+        "title": "Discounted Hall Rental",
+        "description": "Need a place to hold a birthday party? We offer greatly discounted rental rates for our hall to our members"
+      }
+    ]
+  }
+}

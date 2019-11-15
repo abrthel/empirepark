@@ -34,6 +34,46 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Icon, name: icon, widget: string}
               - {label: Link, name: link, widget: string}
+
+  - label: "Static Pages"
+    name: "static_pages"
+    editor:
+      preview: false
+    format: 'json'
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "assets/content/static_pages/home.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Sub Title"
+                name: "sub_title"
+                widget: "string"
+
+          - label: "Membership Benefits Section"
+            name: "membership_benefits_section"
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Sub Title"
+                name: "sub_title"
+                widget: "string"
+              - label: "Benefits"
+                name: "benefits"
+                widget: "list"
+                fields:
+                  - {lable: "Icon", name: "icon", widget: "string", hint: "Eg (without quotes): 'fas fa-futbol' | Must be a Font Awsome Icon. See https://fontawesome.com/ for more options" }
+                  - {lable: "Title", name: "title", widget: "string" }
+                  - {lable: "Description", name: "description", widget: "string" }
+
   - name: 'pages'
     label: 'Pages'
     format: 'json'
